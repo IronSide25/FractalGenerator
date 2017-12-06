@@ -36,14 +36,51 @@ public class CalculateMandelbrotFractal implements Calculate_Complex_Fractal {
         double new_x = 0;                       // or <=
         while ((iterations < accuracy) && (x * x + y * y < 4))
         {
-            new_x = (x * x - y * y + real);
-            y = (2 * x * y + imaginary);
+        	new_x = (x * x - y * y + real);
+            y = (2 * x * y +imaginary);
             x = new_x;
             iterations++;
-        }
+        }   
 
         return ((double)iterations) / ((double)accuracy);
     }
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*public static double isPartOf(Complex n, int accuracy)
+    {
+        double real = n.real;
+        double imaginary = n.imaginary;
+        int iterations = 0;
+
+        double x = real;
+        double y = imaginary;
+        double new_x = 0;                       // or <=
+        while ((iterations < accuracy) && (x * x + y * y < 4))
+        {
+        	new_x = (x * x - y * y)-0.7269;
+            y = (2 * x * y )+0.1889;
+            x = new_x;
+            iterations++;
+        }   
+
+        return ((double)iterations) / ((double)accuracy);
+    }*/

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <left>
-      <Canvas fx:id="mainCanvas" height="900.0" onMouseClicked="#draw" width="900.0" BorderPane.alignment="CENTER" />
+      <Canvas fx:id="mainCanvas" height="900.0" onMouseClicked="#onMainCanvasClick" width="900.0" BorderPane.alignment="CENTER" />
    </left>
    <top>
       <MenuBar BorderPane.alignment="CENTER">
@@ -31,4 +32,7 @@
         </menus>
       </MenuBar>
    </top>
+   <right>
+      <ComboBox fx:id="selectFractalComboBox" prefWidth="150.0" promptText="Select Fractal" BorderPane.alignment="TOP_RIGHT" />
+   </right>
 </BorderPane>

@@ -22,7 +22,6 @@ public class CalculateBurningShipFractal implements Calculate_Complex_Fractal
                  
              }
          }
-		System.out.println("wykonalem sie");
 	}
 	
 	

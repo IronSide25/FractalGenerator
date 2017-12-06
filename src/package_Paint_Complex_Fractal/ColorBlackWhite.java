@@ -9,6 +9,8 @@ public class ColorBlackWhite implements Paint_Complex_Fractal
 	@Override
 	public void paintComplexFractal(double planeArray[][],PixelWriter pw) 
 	{
+		
+		
 		for (int y = 0 ; y < 900 ; y++) 
 	        for (int x = 0 ; x < 900 ; x++) 
 	        	{

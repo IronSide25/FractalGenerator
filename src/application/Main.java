@@ -16,7 +16,7 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("/Window.fxml"));
 			primaryStage.setTitle("Fractal Generator");
-			primaryStage.setScene(new Scene(root, 1000,1000));
+			primaryStage.setScene(new Scene(root, 1300,1000));
 			primaryStage.show();			
 		} catch(Exception e) {
 			e.printStackTrace();
