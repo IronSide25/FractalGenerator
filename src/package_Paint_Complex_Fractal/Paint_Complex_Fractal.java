@@ -1,9 +1,11 @@
 package package_Paint_Complex_Fractal;
 
-import javafx.scene.image.PixelWriter;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.Image;
+
 
 public interface Paint_Complex_Fractal {
 	
-	public void paintComplexFractal(double planeArray[][],PixelWriter pw);
+	public Image paintComplexFractal(double planeArray[][],GraphicsContext gc);
 
 }

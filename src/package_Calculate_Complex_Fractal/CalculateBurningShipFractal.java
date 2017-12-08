@@ -1,5 +1,7 @@
 package package_Calculate_Complex_Fractal;
 
+import java.util.HashMap;
+
 import application.Complex;
 
 public class CalculateBurningShipFractal implements Calculate_Complex_Fractal 
@@ -7,10 +9,15 @@ public class CalculateBurningShipFractal implements Calculate_Complex_Fractal
 
 	
 	@Override
-	public void calculateComplexFractal(double planeArray[][], int accuracy,double scale,double moveX,double moveY)
+	public void calculateComplexFractal(double planeArray[][], HashMap<String, Double> fractalParam)
 	{
 		 int centerX = planeArray.length/2;
          int centerY = planeArray[1].length/2;
+         
+         double moveX = fractalParam.get("moveX");
+         double moveY = fractalParam.get("moveY");
+         double scale = fractalParam.get("scale");
+         int accuracy = fractalParam.get("accuracy").intValue();
 		
          for (double i = 0; i < planeArray.length; i++)
          {
