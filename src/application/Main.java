@@ -22,7 +22,6 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 
-		System.out.println("aaaaaaaaaaa");
 	}
 	
 	public static void main(String[] args) {

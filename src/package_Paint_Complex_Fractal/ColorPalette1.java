@@ -40,17 +40,16 @@ public class ColorPalette1 implements Paint_Complex_Fractal
         
     }		
 			
-   WritableImage image = new WritableImage(900,900);
+   WritableImage image = new WritableImage(planeArray.length,planeArray[0].length);
    PixelWriter px = image.getPixelWriter();  
     
-		for (int y = 0 ; y < 900 ; y++) 
-	        for (int x = 0 ; x < 900 ; x++) 
+		for (int y = 0 ; y < planeArray.length ; y++) 
+	        for (int x = 0 ; x < planeArray[0].length ; x++) 
 	        	{
 	        	double constant = 767;
                 double wynik = (planeArray[y][x])*constant;                                                                 
-                px.setColor(x, y, Colors[(int)wynik]);                                                         
+                px.setColor(x, y, Colors[(int)wynik]);              //px.setColor(x, y, new Color((255 * wynik), (int)(255 * (1 - wynik)), 0));                                              
 	        	}	
-		
 		return image;
 	}
 	

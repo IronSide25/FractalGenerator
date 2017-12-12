@@ -1,15 +1,9 @@
 package application;
 
 import javafx.scene.canvas.*;
-import javafx.scene.image.PixelWriter;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
 import javafx.scene.control.ComboBox;
-import java.io.IOException;
 import java.util.HashMap;
-import java.util.Random;
-import com.sun.javafx.collections.MappingChange.Map;
-import javafx.concurrent.Task;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -56,7 +50,7 @@ public class Controller
 	        	else
 	        	{
 	        		currentFractal = t1;
-	        		animateJuliaSet(0.7885 ,0, 3.14*2.0, 300); 
+	        		animateJuliaSet(0.7885 ,0, 3.14*2.0, 500); 
 	        	}
 	        }	       
 	    });
