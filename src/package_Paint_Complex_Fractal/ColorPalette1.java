@@ -46,9 +46,9 @@ public class ColorPalette1 implements Paint_Complex_Fractal
 		for (int y = 0 ; y < planeArray.length ; y++) 
 	        for (int x = 0 ; x < planeArray[0].length ; x++) 
 	        	{
-	        	double constant = 767;
-                double wynik = (planeArray[y][x])*constant;                                                                 
-                px.setColor(x, y, Colors[(int)wynik]);              //px.setColor(x, y, new Color((255 * wynik), (int)(255 * (1 - wynik)), 0));                                              
+	        	double scale = 767;
+                double colorNmb = (planeArray[y][x])*scale;                                                                 
+                px.setColor(x, y, Colors[(int)colorNmb]);              //px.setColor(x, y, new Color((255 * wynik), (int)(255 * (1 - wynik)), 0));                                              
 	        	}	
 		return image;
 	}
